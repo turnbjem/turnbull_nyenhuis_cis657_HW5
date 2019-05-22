@@ -13,9 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    let THEME_COLOR1 = UIColor.init(red:0.000, green:0.157, blue:0.216,alpha:1.00)
+    let THEME_COLOR2 = UIColor.init(red:0.350, green:0.157, blue:0.700,alpha:1.00)
+    let THEME_COLOR3 = UIColor.init(red:0.500, green:0.00, blue:0.216,alpha:1.00)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let navAppearance = UINavigationBar.appearance()
+        navAppearance.barTintColor = THEME_COLOR1
+        navAppearance.tintColor = THEME_COLOR2
+        navAppearance.isTranslucent = false
+        navAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         // Override point for customization after application launch.
         return true
     }
