@@ -40,7 +40,8 @@ class ViewController: UIViewController, DistanceSelectionViewControllerDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
+        self.BearingTextField.text = "Bearing: "
+        self.DistanceTextField.text = "Distance: "
         let detectTouch = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(detectTouch)
         
@@ -124,8 +125,8 @@ class ViewController: UIViewController, DistanceSelectionViewControllerDelegate{
                 bearing = round(100 * bearing) / 100
             }
             
-            DistanceTextField.text = "\(distance)" + " " + self.DistanceUnits
-            BearingTextField.text = "\(bearing)" +  " " + self.BearingUnits
+            DistanceTextField.text = "Distance: \(distance)" + " " + self.DistanceUnits
+            BearingTextField.text = "Bearing: \(bearing)" +  " " + self.BearingUnits
         }
         else {
             print("You have not entered a value!")
@@ -148,8 +149,8 @@ class ViewController: UIViewController, DistanceSelectionViewControllerDelegate{
         LatP2.text = ""
         LongP1.text = ""
         LongP2.text = ""
-        DistanceTextField.text = ""
-        BearingTextField.text = ""
+        DistanceTextField.text = "Distance: "
+        BearingTextField.text = "Bearing: "
     }
     
     
