@@ -32,7 +32,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-Wz-seS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-Wz-seS" customClass="GeoCalcLabel" customModule="HW3_a" customModuleProvider="target">
                                 <rect key="frame" x="20" y="162" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -103,13 +103,13 @@
                                     <action selector="ClearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gju-2Q-XN0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-XK-L0H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-XK-L0H" customClass="GeoCalcLabel" customModule="HW3_a" customModuleProvider="target">
                                 <rect key="frame" x="20" y="190.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1b-Me-TiQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1b-Me-TiQ" customClass="GeoCalcButton" customModule="HW3_a" customModuleProvider="target">
                                 <rect key="frame" x="138" y="846" width="138" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="1195.6521739130435" y="-178.125"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="Rgg-m3-72c">
             <objects>
                 <viewController id="vYO-Vo-Pie" customClass="SettingsViewController" customModule="HW3_a" customModuleProvider="target" sceneMemberID="viewController">
@@ -162,13 +162,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F3-jM-EnC">
-                                <rect key="frame" x="119" y="0.0" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGO-em-GxD">
                                 <rect key="frame" x="20" y="767" width="374" height="75"/>
                                 <constraints>
@@ -226,7 +219,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7oU-Da-shS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="agF-o1-vfe">
+                    <navigationItem key="navigationItem" title="Settings" id="agF-o1-vfe" userLabel="Settings">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="XOn-AA-lLh">
                             <connections>
                                 <action selector="CancelPressed:" destination="vYO-Vo-Pie" id="PE2-xp-PQn"/>

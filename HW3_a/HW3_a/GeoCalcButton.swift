@@ -11,6 +11,8 @@ import UIKit
 class GeoCalcButton: UIButton {
     
     override func awakeFromNib() {
+        
+        self.tintColor = BACKGROUND_COLOR
         self.backgroundColor = FOREGROUND_COLOR
         self.layer.cornerRadius = 5.0
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+//use https://www.ralfebert.de/ios-examples/uikit/swift-uicolor-picker/ for different color combinations
 let BACKGROUND_COLOR = UIColor.init(red:0.0, green:0.2549, blue:0.698, alpha:1.00)
 let FOREGROUND_COLOR = UIColor.init(red:0.9098, green:0.5725 , blue:0.0, alpha:1.00)
 

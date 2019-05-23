@@ -11,10 +11,16 @@ import UIKit
 class GeoCalcTextField: DecimalMinusTextField {
     
     override func awakeFromNib() {
-        self.backgroundColor = BACKGROUND_COLOR
-        self.layer.borderWidth = 1.0
-        self.textColor = FOREGROUND_COLOR
+        
+        self.tintColor = FOREGROUND_COLOR
+        self.backgroundColor = UIColor.clear
         self.borderStyle = .roundedRect
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = FOREGROUND_COLOR.cgColor
+        self.layer.cornerRadius = 5.0
+        self.textColor = FOREGROUND_COLOR
+        
+        
         
         guard let ph = self.placeholder else {
             return
