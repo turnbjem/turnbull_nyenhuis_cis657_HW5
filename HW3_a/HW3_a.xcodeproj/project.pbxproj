@@ -17,6 +17,9 @@
 		0152DA32228CFD46008EE243 /* HW3_aUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152DA31228CFD46008EE243 /* HW3_aUITests.swift */; };
 		0152DA40228CFE46008EE243 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152DA3F228CFE46008EE243 /* DecimalMinusTextField.swift */; };
 		4A7DBB55228DFD5F00342746 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7DBB54228DFD5F00342746 /* SettingsViewController.swift */; };
+		4A84157F22970FD20002DE5E /* GeoCalcTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A84157E22970FD20002DE5E /* GeoCalcTextField.swift */; };
+		4A841581229711F00002DE5E /* GeoCalcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A841580229711F00002DE5E /* GeoCalcLabel.swift */; };
+		4A8415832297120D0002DE5E /* GeoCalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8415822297120D0002DE5E /* GeoCalcButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0152DA33228CFD46008EE243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0152DA3F228CFE46008EE243 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
 		4A7DBB54228DFD5F00342746 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4A84157E22970FD20002DE5E /* GeoCalcTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcTextField.swift; sourceTree = "<group>"; };
+		4A841580229711F00002DE5E /* GeoCalcLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcLabel.swift; sourceTree = "<group>"; };
+		4A8415822297120D0002DE5E /* GeoCalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				0152DA18228CFD46008EE243 /* Assets.xcassets */,
 				0152DA1A228CFD46008EE243 /* LaunchScreen.storyboard */,
 				0152DA1D228CFD46008EE243 /* Info.plist */,
+				4A84157E22970FD20002DE5E /* GeoCalcTextField.swift */,
+				4A841580229711F00002DE5E /* GeoCalcLabel.swift */,
+				4A8415822297120D0002DE5E /* GeoCalcButton.swift */,
 			);
 			path = HW3_a;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 				TargetAttributes = {
 					0152DA0D228CFD44008EE243 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					0152DA21228CFD46008EE243 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -265,10 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8415832297120D0002DE5E /* GeoCalcButton.swift in Sources */,
 				01131053228E3DE800071CE3 /* CLLocationExtensions.swift in Sources */,
 				0152DA40228CFE46008EE243 /* DecimalMinusTextField.swift in Sources */,
+				4A84157F22970FD20002DE5E /* GeoCalcTextField.swift in Sources */,
 				0152DA14228CFD44008EE243 /* ViewController.swift in Sources */,
 				0152DA12228CFD44008EE243 /* AppDelegate.swift in Sources */,
+				4A841581229711F00002DE5E /* GeoCalcLabel.swift in Sources */,
 				4A7DBB55228DFD5F00342746 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HW3_a/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +466,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Jemlo-Jolo.HW3-a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HW3_a/HW3_a-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HW3_a/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,6 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Jemlo-Jolo.HW3-a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HW3_a/HW3_a-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

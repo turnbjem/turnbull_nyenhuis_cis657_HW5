@@ -40,6 +40,8 @@ class ViewController: UIViewController, DistanceSelectionViewControllerDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.view.backgroundColor = BACKGROUND_COLOR
+        
         self.BearingTextField.text = "Bearing: "
         self.DistanceTextField.text = "Distance: "
         let detectTouch = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
