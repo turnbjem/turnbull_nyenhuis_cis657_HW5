@@ -109,8 +109,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1b-Me-TiQ">
-                                <rect key="frame" x="138" y="501" width="138" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1b-Me-TiQ">
+                                <rect key="frame" x="138" y="846" width="138" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <segue destination="QyP-cf-7Br" kind="show" identifier="ViewSettingsSegue" id="DWL-AW-Jl8"/>
@@ -120,6 +120,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="F7P-wl-cSR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="1r6-ZD-Mi7"/>
+                            <constraint firstAttribute="bottom" secondItem="D1b-Me-TiQ" secondAttribute="bottom" constant="20" symbolic="YES" id="8lc-bq-Ixz"/>
                             <constraint firstItem="ycd-Wz-seS" firstAttribute="top" secondItem="Kyh-Uy-gZC" secondAttribute="bottom" id="FEv-3u-zBF"/>
                             <constraint firstItem="ycd-Wz-seS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fe6-cv-Mf4"/>
                             <constraint firstItem="yvo-WZ-Thl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="HWx-6U-Lf1"/>
@@ -132,7 +133,6 @@
                             <constraint firstItem="yvo-WZ-Thl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R3P-ky-fs0"/>
                             <constraint firstItem="Kyh-Uy-gZC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="dUB-JO-o4f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yvo-WZ-Thl" secondAttribute="trailing" constant="20" id="ehw-mO-fAS"/>
-                            <constraint firstItem="D1b-Me-TiQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="fOp-sc-75B"/>
                             <constraint firstItem="D1b-Me-TiQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h83-d9-vHG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O8I-XK-L0H" secondAttribute="trailing" constant="20" id="mWA-6W-k7J"/>
                             <constraint firstItem="Kyh-Uy-gZC" firstAttribute="top" secondItem="yvo-WZ-Thl" secondAttribute="bottom" id="mec-BC-Bo1"/>
